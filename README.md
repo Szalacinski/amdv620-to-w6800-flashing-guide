@@ -74,12 +74,12 @@ Enable Secure Boot if you want it back.
 ### **Example Settings for fancontrol**
 
 ```text
-INTERVAL=3  
+INTERVAL=5  
 DEVPATH=hwmon0=devices/platform/nct6775.656 hwmon10=devices/pci0000:00/0000:00:03.1/0000:16:00.0/0000:17:00.0/0000:18:00.0  
 DEVNAME=hwmon0=nct6796 hwmon10=amdgpu  
 FCTEMPS=hwmon0/pwm4=hwmon10/temp3_input  
 FCFANS= hwmon0/pwm4=hwmon0/fan4_input  
-MINTEMP=hwmon0/pwm4=50  
+MINTEMP=hwmon0/pwm4=45  
 MAXTEMP=hwmon0/pwm4=75  
 MINSTART=hwmon0/pwm4=22  
 MINSTOP=hwmon0/pwm4=22  
@@ -89,7 +89,7 @@ DEVPATH=hwmon0=devices/platform/nct6775.656 hwmon10=devices/pci0000:00/0000:00:0
 DEVNAME=hwmon0=nct6796 hwmon10=amdgpu  
 FCTEMPS=hwmon0/pwm3=hwmon10/temp3_input  
 FCFANS= hwmon0/pwm3=hwmon0/fan4_input  
-MINTEMP=hwmon0/pwm3=50  
+MINTEMP=hwmon0/pwm3=45  
 MAXTEMP=hwmon0/pwm3=75  
 MINSTART=hwmon0/pwm3=22  
 MINSTOP=hwmon0/pwm3=22  
@@ -172,12 +172,12 @@ sudo systemctl enable fancontrol
 ### **fancontrol 配置文件示例**
 
 ```text
-INTERVAL=3
+INTERVAL=5
 DEVPATH=hwmon0=devices/platform/nct6775.656 hwmon10=devices/pci0000:00/0000:00:03.1/0000:16:00.0/0000:17:00.0/0000:18:00.0
 DEVNAME=hwmon0=nct6796 hwmon10=amdgpu
 FCTEMPS=hwmon0/pwm4=hwmon10/temp3_input
 FCFANS= hwmon0/pwm4=hwmon0/fan4_input
-MINTEMP=hwmon0/pwm4=50
+MINTEMP=hwmon0/pwm4=45
 MAXTEMP=hwmon0/pwm4=75
 MINSTART=hwmon0/pwm4=22
 MINSTOP=hwmon0/pwm4=22
@@ -187,7 +187,7 @@ DEVPATH=hwmon0=devices/platform/nct6775.656 hwmon10=devices/pci0000:00/0000:00:0
 DEVNAME=hwmon0=nct6796 hwmon10=amdgpu
 FCTEMPS=hwmon0/pwm3=hwmon10/temp3_input
 FCFANS= hwmon0/pwm3=hwmon0/fan4_input
-MINTEMP=hwmon0/pwm3=50
+MINTEMP=hwmon0/pwm3=45
 MAXTEMP=hwmon0/pwm3=75
 MINSTART=hwmon0/pwm3=22
 MINSTOP=hwmon0/pwm3=22
