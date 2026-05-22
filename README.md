@@ -54,6 +54,7 @@ amdvbflash -p 0 AMD.RadeonProW6800.32768.210422.rom --config v620.cfg
 * All other settings can be reverted if you wish.
 1. Turn off the machine and make sure the GPU gets power cycled.
 2. Remove the portion of the grate blocking the mini displayport with side cutters.
+3. To use this card on Windows you MUST use the PRO drivers and not the Adrenalin drivers.
 
 ## **Setting up Fan Curves**
 
@@ -152,6 +153,7 @@ amdvbflash -p 0 AMD.RadeonProW6800.32768.210422.rom --config v620.cfg
 * 如果有需要，其余设置项均可以恢复原状。
 1. 关闭电脑电源，并确保显卡完全断电重启（Power Cycle）。
 2. 使用斜口钳剪掉显卡挡板上阻挡 Mini DisplayPort 接口弹片的金属格栅。
+3. 要在 Windows 上使用这张卡，你必须使用 PRO 驱动，而不是 Adrenalin 驱动。
 
 ## **配置风扇调速曲线**
 
