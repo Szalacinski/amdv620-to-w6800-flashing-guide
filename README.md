@@ -13,6 +13,7 @@
 ## **Why Not?**
 
 * You lose Compute Units. The W6800 has 60 CUs. The V620 has 72 CUs. When I flashed it, I ended up getting 54 CUs due to the configuration of the die.
+* SR-IOV becomes unsupported.
 
 ## **Motherboard Compatibility**
 
@@ -112,6 +113,7 @@ MAXPWM=hwmon0/pwm3=255
 ## **潜在代价**
 
 * 会损失一部分计算单元（Compute Units）。W6800 原生拥有 60 个 CU，而 V620 拥有 72 个 CU。在实际刷入固件后，由于晶圆芯片内部的架构配置原因，最终可用数量会变为 54 个 CU。
+* SR-IOV 不再受支持。
 
 ## **主板兼容性**
 
