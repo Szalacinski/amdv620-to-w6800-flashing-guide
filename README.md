@@ -15,9 +15,9 @@
 * You lose Compute Units. The W6800 has 60 CUs. The V620 has 72 CUs. When I flashed it, I ended up getting 54 CUs due to the configuration of the die.
 * SR-IOV becomes unsupported.
 
-## **Motherboard Compatibility**
+## **System Compatibility**
 
-The V620 on its default firmware seems to be incredibly strict about what motherboards it supports. I tried it on 2 X570 AM4 boards (ASUS, AsRock) and it refused to boot. I tried a B450M (AsRock) motherboard and it booted fine. The primary reason I flashed it was simply for wider compatibility. I am unsure what motherboards are actually compatible with the V620 on its default FW, and why.
+The V620 with its default firmware seems to be extremely picky about power and in some cases doesn't work with some setups. In some cases where it does work, it doesn't work with two in the same system. Flashing to the W6800 firmware fixes this.
 
 ## **Fan Shroud**
 
@@ -115,9 +115,8 @@ MAXPWM=hwmon0/pwm3=255
 * 会损失一部分计算单元（Compute Units）。W6800 原生拥有 60 个 CU，而 V620 拥有 72 个 CU。在实际刷入固件后，由于晶圆芯片内部的架构配置原因，最终可用数量会变为 54 个 CU。
 * SR-IOV 不再受支持。
 
-## **主板兼容性**
-
-V620 在默认固件下对主板的挑剔程度极其严苛。曾尝试在 2 款 X570 AM4 主板（华硕、华擎）上运行，均无法开机点亮。但在另一款 B450M（华擎）主板上则能正常启动。因此，选择刷固件的最核心原因就是为了彻底解决主板兼容性问题。目前尚不明确哪些主板能原生兼容默认固件下的 V620，也无法确定具体原因。
+## **系统兼容性**
+搭载默认固件的 V620 对供电要求极其苛刻，在某些配置下可能无法正常工作。在部分可以正常驱动的系统中，同系统内无法同时启用两块显卡。将固件刷写至 W6800 版本可有效解决上述兼容性问题。
 
 ## **导风罩设计**
 
